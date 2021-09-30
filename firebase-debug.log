@@ -1,0 +1,44 @@
+[debug] [2021-09-30T12:10:27.074Z] ----------------------------------------------------------------------
+[debug] [2021-09-30T12:10:27.075Z] Command:       /usr/local/bin/firebase /home/developer/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2021-09-30T12:10:27.076Z] CLI Version:   9.16.6
+[debug] [2021-09-30T12:10:27.076Z] Platform:      linux
+[debug] [2021-09-30T12:10:27.076Z] Node Version:  v12.18.1
+[debug] [2021-09-30T12:10:27.076Z] Time:          Thu Sep 30 2021 17:40:27 GMT+0530 (India Standard Time)
+[debug] [2021-09-30T12:10:27.076Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-09-30T12:10:27.118Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-09-30T12:10:27.119Z] > authorizing via signed-in user (shajudamodaran7725@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/developer
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using athercreations. 
+[debug] [2021-09-30T12:10:31.872Z] > refreshing access token with scopes: []
+[debug] [2021-09-30T12:10:31.873Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-09-30T12:10:32.448Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Thu, 30 Sep 2021 12:10:32 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-09-30T12:10:32.467Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/athercreations [none]
+[debug] [2021-09-30T12:11:02.478Z] Timeout reached making request to https://firebase.googleapis.com/v1beta1/projects/athercreations
+[debug] [2021-09-30T12:11:02.890Z] FirebaseError: Timeout reached making request to https://firebase.googleapis.com/v1beta1/projects/athercreations
+    at Client.doRequest (/home/developer/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/apiv2.js:209:23)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[error] 
+[error] Error: Failed to get Firebase project athercreations. Please make sure the project exists and your account has permission to access it.
